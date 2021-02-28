@@ -19,7 +19,7 @@
       <v-btn
         color="success"
         outlined
-        @click="addToCart"
+        @click="addToCart(i)"
       >
         <v-icon>mdi-plus</v-icon>
         Add to Cart
