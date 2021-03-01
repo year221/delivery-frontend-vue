@@ -26,26 +26,26 @@
         <v-card-text>
           Quantity: {{ quantity }}
         </v-card-text>
-        <v-btn
-          color="error"
-          class="ml-4"
-          outlined
-          small
-          @click="updateCart(product.id, -1)"
-        >
-          <v-icon small>mdi-minus</v-icon>
-          Remove from Cart
-        </v-btn>
-        <v-btn
-          color="success"
-          class="ml-4"
-          outlined
-          small
-          @click="updateCart(product.id, 1)"
-        >
-          <v-icon small>mdi-plus</v-icon>
-          Add to Cart
-        </v-btn>
+        <div class="text-center">
+          <v-btn
+            color="error"
+            class="mx-2"
+            outlined
+            small
+            @click="updateCart(product.id, -1)"
+          >
+            <v-icon small>mdi-minus</v-icon>
+          </v-btn>
+          <v-btn
+            color="success"
+            class="mx-2"
+            outlined
+            small
+            @click="updateCart(product.id, 1)"
+          >
+            <v-icon small>mdi-plus</v-icon>
+          </v-btn>
+        </div>
       </div>
     </div>
   </v-card>
