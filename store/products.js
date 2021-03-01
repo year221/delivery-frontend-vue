@@ -1,38 +1,38 @@
 export const state = () => ([
   {
-    id: 'nintendo-switch',
-    image: 'https://raw.githubusercontent.com/gwenf/vuetify-responsive/master/public/img/products/product-1.jpg',
-    name: 'Nintendo Switch',
-    price: 299.99
+    id: 'port-dumping',
+    image: 'https://media.istockphoto.com/photos/japanese-dumplings-gyoza-with-pork-meat-and-vegetables-picture-id1133151212',
+    name: 'Port Dumpings',
+    price: 7.99
   },
   {
-    id: 'game-mug',
-    image: 'https://raw.githubusercontent.com/gwenf/vuetify-responsive/master/public/img/products/product-2.jpg',
-    name: 'Gameboy Mug',
-    price: 19.99
+    id: 'fried-noodle-with-shrimp',
+    image: 'https://media.istockphoto.com/photos/fried-noodle-with-shrimp-and-vegetables-in-sauce-picture-id503977754',
+    name: 'Fried Noodle With Shrimp',
+    price: 9.99
   },
   {
-    id: 'family-computer',
-    image: 'https://raw.githubusercontent.com/gwenf/vuetify-responsive/master/public/img/products/product-3.jpg',
-    name: 'Family Computer',
-    price: 70
+    id: 'sweet-and-sour-pork',
+    image: 'https://media.istockphoto.com/photos/sweet-and-sour-pork-picture-id155278138',
+    name: 'Sweet and Sour Pork',
+    price: 8.99
   },
   {
-    id: 'jeopardy-game',
-    image: 'https://raw.githubusercontent.com/gwenf/vuetify-responsive/master/public/img/products/product-4.jpg',
-    name: 'Jeopardy Game',
-    price: 30
+    id: 'kung-pao-chicken',
+    image: 'https://media.istockphoto.com/photos/kung-pao-chicken-picture-id532057909',
+    name: 'Kung Pao Chicken',
+    price: 10.99
   },
   {
-    id: 'game-cube',
-    image: 'https://raw.githubusercontent.com/gwenf/vuetify-responsive/master/public/img/products/product-5.jpg',
-    name: 'Game Cube',
-    price: 99.99
+    id: 'orange-chicken',
+    image: 'https://media.istockphoto.com/photos/chinese-orange-chicken-with-chopsticks-picture-id492023021',
+    name: 'Orange-Chicken',
+    price: 9.99
   },
   {
-    id: 'gameboy-color',
-    image: 'https://raw.githubusercontent.com/gwenf/vuetify-responsive/master/public/img/products/product-6.jpg',
-    name: 'Gameboy Color',
-    price: 45
+    id: 'egg-roll',
+    image: 'https://media.istockphoto.com/photos/homemade-egg-rolls-with-dipping-sauce-picture-id922650052',
+    name: 'Egg Roll',
+    price: 2.99
   }
 ])
