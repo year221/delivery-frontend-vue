@@ -14,7 +14,7 @@
 
       <!-- desktop & tablet menu -->
       <v-toolbar-items class="hidden-xs-only">
-        <v-btn v-for="item in items" :key="item.title" :to="item.link" text>
+        <v-btn v-for="item in items" :key="item.title" :to="item.link" nuxt>
           <v-icon>mdi-{{ item.icon }}</v-icon>
           {{ item.title }}
         </v-btn>

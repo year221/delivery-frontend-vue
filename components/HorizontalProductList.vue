@@ -30,7 +30,7 @@
           class="ml-4"
           outlined
           small
-          @click="updateCart(i)"
+          @click="updateCart(product.id)"
         >
           <v-icon small>mdi-minus</v-icon>
           Remove from Cart
@@ -40,7 +40,7 @@
           color="success"
           small
           outlined
-          @click="updateCart(i)"
+          @click="updateCart(product.id)"
         >
           <v-icon small>mdi-plus</v-icon>
           Add to Cart
@@ -56,7 +56,7 @@ export default {
     product: Object,
     updateCart: Function,
     btnAction: String,
-    i: Number
+    quantity: Number
   }
 }
 </script>

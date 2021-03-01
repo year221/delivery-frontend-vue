@@ -1,11 +1,11 @@
 <template>
   <div>
-    <v-row v-for="(product, i) in products" :key="i">
+    <v-row v-for="cartItem in cart" :key="cartItem.itemId">
       <HorizontalProductList
-        :product="product"
-        :i="i"
+        :product="getProductById(cartItem.itemId)"
         :updateCart="removeFromCart"
         btnAction="remove"
+        :quantity = "cartItem.quantity"
       />
     </v-row>
   </div>
@@ -23,10 +23,13 @@ export default {
     return {}
   },
   computed: {
-    ...mapState(['products'])
+    ...mapState(['products', 'cart'])
   },
   methods: {
     removeFromCart () {
+    },
+    getProductById (itemId) {
+      return this.$store.state.products.find(product => product.id === itemId)
     }
   }
 }

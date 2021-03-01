@@ -6,6 +6,7 @@ export const state = () => ({
   },
   cart: []
 })
+
 export const mutations = {
   addItemToCart (state, payload) {
     const { itemId, quantity } = payload
