@@ -32,7 +32,7 @@
           v-for="item in items"
           :key="item.title"
           :to="item.link"
-          link
+          nuxt
         >
           <v-list-item-icon>
             <v-icon>mdi-{{ item.icon }}</v-icon>
