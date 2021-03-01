@@ -8,15 +8,23 @@ export const state = () => ({
 })
 
 export const mutations = {
-  addItemToCart (state, payload) {
+  updateItemInCart (state, payload) {
     const { itemId, quantity } = payload
     const idx = state.cart.findIndex((cartItem) => {
       return cartItem.itemId === itemId
     })
     if (idx === -1) {
-      state.cart.push({ itemId, quantity })
+      if (quantity >= 1) {
+        state.cart.push({
+          itemId,
+          quantity
+        })
+      }
     } else {
-      state.cart[idx].quantity += 1
+      state.cart[idx].quantity += quantity
+      if (state.cart[idx].quantity <= 0) {
+        state.cart.splice(idx, 1)
+      }
     }
   },
   updateSnackbar (state, settings) {

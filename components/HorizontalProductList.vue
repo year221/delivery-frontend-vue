@@ -23,24 +23,25 @@
         <v-card-subtitle>
           ${{ product.price }}
         </v-card-subtitle>
-
+        <v-card-text>
+          Quantity: {{ quantity }}
+        </v-card-text>
         <v-btn
-          v-if="btnAction === 'remove'"
           color="error"
           class="ml-4"
           outlined
           small
-          @click="updateCart(product.id)"
+          @click="updateCart(product.id, -1)"
         >
           <v-icon small>mdi-minus</v-icon>
           Remove from Cart
         </v-btn>
         <v-btn
-          v-else
           color="success"
-          small
+          class="ml-4"
           outlined
-          @click="updateCart(product.id)"
+          small
+          @click="updateCart(product.id, 1)"
         >
           <v-icon small>mdi-plus</v-icon>
           Add to Cart
@@ -55,7 +56,6 @@ export default {
   props: {
     product: Object,
     updateCart: Function,
-    btnAction: String,
     quantity: Number
   }
 }

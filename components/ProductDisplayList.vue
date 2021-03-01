@@ -27,9 +27,9 @@ export default {
     ...mapState(['products'])
   },
   methods: {
-    ...mapMutations(['updateSnackbar', 'addItemToCart']),
+    ...mapMutations(['updateSnackbar', 'updateItemInCart']),
     addToCart (itemId, quantity = 1) {
-      this.addItemToCart({ itemId, quantity })
+      this.updateItemInCart({ itemId, quantity })
       this.updateSnackbar({ show: true })
     }
   }
