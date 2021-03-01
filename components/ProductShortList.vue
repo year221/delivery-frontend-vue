@@ -1,5 +1,8 @@
 <template>
   <div>
+    <v-container v-if="!cart">
+      <h1> Card is Empty </h1>
+    </v-container>
     <v-row v-for="cartItem in cart" :key="cartItem.itemId">
       <HorizontalProductList
         :product="getProductById(cartItem.itemId)"
