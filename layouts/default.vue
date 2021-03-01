@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app>
 <!--    <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
@@ -57,13 +57,14 @@
         <v-icon>mdi-menu</v-icon>
       </v-btn>
     </v-app-bar>-->
+    <TopNavBar />
     <v-main>
       <v-container>
         <nuxt />
       </v-container>
-    </v-main>
+    </v-main>-->
 <!--    <v-navigation-drawer
-      v-model="rightDrawer"
+      v-model="rightDrawer
       :right="right"
       temporary
       fixed
@@ -89,6 +90,10 @@
 </template>
 
 <script>
+import TopNavBar from '@/components/TopNavBar.vue'
 export default {
+  components: {
+    TopNavBar
+  }
 }
 </script>
