@@ -19,7 +19,7 @@
       <v-btn
         color="success"
         outlined
-        @click="addToCart(i)"
+        @click="addToCart(product.id)"
       >
         <v-icon>mdi-plus</v-icon>
         Add to Cart
@@ -32,8 +32,7 @@
 export default {
   props: {
     product: Object,
-    addToCart: Function,
-    i: Number
+    addToCart: Function
   }
 }
 </script>

@@ -9,8 +9,8 @@ export const state = () => ({
 export const mutations = {
   addItemToCart (state, payload) {
     const { itemId, quantity } = payload
-    const idx = state.cart.findIndex((product) => {
-      return product.itemId === itemId
+    const idx = state.cart.findIndex((cartItem) => {
+      return cartItem.itemId === itemId
     })
     if (idx === -1) {
       state.cart.push({ itemId, quantity })

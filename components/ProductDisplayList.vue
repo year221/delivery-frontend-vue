@@ -6,10 +6,10 @@
       <v-col
         sm="6"
         md="4"
-        v-for="(product, i) in $store.state.products"
+        v-for="product in $store.state.products"
         :key="product.name"
       >
-        <VerticalProductCard :product="product" :i="i" :addToCart="addToCart"/>
+        <VerticalProductCard :product="product" :addToCart="addToCart"/>
       </v-col>
     </v-row>
   </div>
@@ -28,8 +28,8 @@ export default {
   },
   methods: {
     ...mapMutations(['updateSnackbar', 'addItemToCart']),
-    addToCart (index, quantity = 1) {
-      this.addItemToCart({ itemId: index, quantity })
+    addToCart (itemId, quantity = 1) {
+      this.addItemToCart({ itemId, quantity })
       this.updateSnackbar({ show: true })
     }
   }
